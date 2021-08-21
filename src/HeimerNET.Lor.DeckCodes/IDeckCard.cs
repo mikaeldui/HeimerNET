@@ -1,17 +1,18 @@
-﻿namespace HeimerNET.Lor.DeckCodes;
-
-/// <summary>
-/// Represend card in deck.
-/// </summary>
-public interface IDeckCard
+﻿namespace HeimerNET.Lor.DeckCodes
 {
     /// <summary>
-    /// Code of card.
+    /// Represend card in deck.
     /// </summary>
-    public string CardCode { get; set; }
+    public interface IDeckCard
+    {
+        /// <summary>
+        /// Code of card.
+        /// </summary>
+        public string CardCode { get; set; }
 
-    /// <summary>
-    /// Count of card.
-    /// </summary>
-    public int Count { get; set; }
+        /// <summary>
+        /// Count of card.
+        /// </summary>
+        public int Count { get; set; }
+    }
 }

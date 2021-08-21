@@ -1,17 +1,18 @@
-﻿namespace HeimerNET.Lor.DeckCodes;
-
-/// <summary>
-/// Represend read-only card in deck.
-/// </summary>
-public interface IReadOnlyDeckCard
+﻿namespace HeimerNET.Lor.DeckCodes
 {
     /// <summary>
-    /// Code of card.
+    /// Represend read-only card in deck.
     /// </summary>
-    public string CardCode { get; }
+    public interface IReadOnlyDeckCard
+    {
+        /// <summary>
+        /// Code of card.
+        /// </summary>
+        public string CardCode { get; }
 
-    /// <summary>
-    /// Count of card.
-    /// </summary>
-    public int Count { get; }
+        /// <summary>
+        /// Count of card.
+        /// </summary>
+        public int Count { get; }
+    }
 }

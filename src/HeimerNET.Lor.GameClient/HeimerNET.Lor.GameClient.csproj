@@ -1,14 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<Description>Encode/Decode Legends of Runeterra decks to/from simple strings.</Description>
 		<PackageTags>LoR;LegendsOfRuneterra;Runeterra;GameClientAPI;GameClient</PackageTags>
+		<Version>0.1.0</Version>
+		<PackageReleaseNotes>Better doc.</PackageReleaseNotes>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <None Update="README.md">
-	    <PackagePath>\</PackagePath>
-	    <Pack>true</Pack>
-	  </None>
-	</ItemGroup>
 	
 </Project>

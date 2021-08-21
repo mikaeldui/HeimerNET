@@ -26,52 +26,53 @@ THE POSSIBILITY OF SUCH DAMAGE.
 using System;
 using System.Collections.Generic;
 
-namespace HeimerNET.Lor.DeckCodes;
-
-static class VarintTranslator
+namespace HeimerNET.Lor.DeckCodes
 {
-    private const byte AllButMSB = 0x7f;
-    private const byte JustMSB = 0x80;
-
-    /// <exception cref="ArgumentException"></exception>
-    public static int PopVarint(Queue<byte> bytes)
+    static class VarintTranslator
     {
-        ulong result = 0;
-        int currentShift = 0;
-        while (bytes.TryDequeue(out var item))
+        private const byte AllButMSB = 0x7f;
+        private const byte JustMSB = 0x80;
+
+        /// <exception cref="ArgumentException"></exception>
+        public static int PopVarint(Queue<byte> bytes)
         {
-            var current = (ulong)item & AllButMSB;
-            result |= current << currentShift;
-            if ((item & JustMSB) != JustMSB)
+            ulong result = 0;
+            int currentShift = 0;
+            while (bytes.TryDequeue(out var item))
             {
-                return (int)result;
+                var current = (ulong)item & AllButMSB;
+                result |= current << currentShift;
+                if ((item & JustMSB) != JustMSB)
+                {
+                    return (int)result;
+                }
+                currentShift += 7;
             }
-            currentShift += 7;
+            throw new ArgumentException("Byte array did not contain valid varints.", nameof(bytes));
         }
-        throw new ArgumentException("Byte array did not contain valid varints.", nameof(bytes));
-    }
 
-    public static byte[] GetVarint(ulong value)
-    {
-        if (value == 0)
-            return new byte[1] { 0 };
-        var buff = new byte[10];
-        var currentIndex = 0;
-        while (value != 0)
+        public static byte[] GetVarint(ulong value)
         {
-            var byteVal = value & AllButMSB;
-            value >>= 7;
-            if (value != 0)
-                byteVal |= 0x80;
-            buff[currentIndex++] = (byte)byteVal;
+            if (value == 0)
+                return new byte[1] { 0 };
+            var buff = new byte[10];
+            var currentIndex = 0;
+            while (value != 0)
+            {
+                var byteVal = value & AllButMSB;
+                value >>= 7;
+                if (value != 0)
+                    byteVal |= 0x80;
+                buff[currentIndex++] = (byte)byteVal;
+            }
+            var result = new byte[currentIndex];
+            Buffer.BlockCopy(buff, 0, result, 0, currentIndex);
+            return result;
         }
-        var result = new byte[currentIndex];
-        Buffer.BlockCopy(buff, 0, result, 0, currentIndex);
-        return result;
-    }
 
-    public static byte[] GetVarint(int value)
-    {
-        return GetVarint((ulong)value);
+        public static byte[] GetVarint(int value)
+        {
+            return GetVarint((ulong)value);
+        }
     }
 }

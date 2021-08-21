@@ -4,7 +4,9 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Authors>AoshiW</Authors>
+		<Company>HeimerNET</Company>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/AoshiW/HeimerNET</PackageProjectUrl>
 	</PropertyGroup>
 
 	<PropertyGroup>

@@ -3,6 +3,8 @@
 	<PropertyGroup>
 		<Description>Encode/Decode Legends of Runeterra decks to/from simple strings.</Description>
 		<PackageTags>LoR;LegendsOfRuneterra;Runeterra;LoRDeckCodes</PackageTags>
+		<Version>1.0.1</Version>
+		<PackageReleaseNotes>Update PackageProjectUrl.</PackageReleaseNotes>
 	</PropertyGroup>
 
 </Project>
