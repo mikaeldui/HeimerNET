@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description></Description>
+    <PackageTags>LoR;LegendsOfRuneterra;Runeterra;DataDragon</PackageTags>
+    <Version>0.1.0</Version>
+    <PackageReleaseNotes>DTO</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>

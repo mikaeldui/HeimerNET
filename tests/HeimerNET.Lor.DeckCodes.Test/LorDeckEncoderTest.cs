@@ -367,7 +367,6 @@ namespace HeimerNET.Lor.DeckCodes.Test
             }
             Assert.IsTrue(failed, "Expected to throw an ArgumentException, but it succeeded.");
 
-
             failed = false;
             deck.Clear();
             deck.Add(new() { CardCode = "01DE002", Count = 0 });
