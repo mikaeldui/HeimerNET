@@ -3,8 +3,8 @@
   <PropertyGroup>
     <Description></Description>
     <PackageTags>LoR;LegendsOfRuneterra;Runeterra;DataDragon</PackageTags>
-    <Version>0.1.1</Version>
-    <PackageReleaseNotes>.NET 6</PackageReleaseNotes>
+    <Version>0.0.2</Version>
+    <PackageReleaseNotes>Test GitHub Actions</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
