@@ -6,9 +6,5 @@
 		<Version>0.1.1</Version>
 		<PackageReleaseNotes>.NET6</PackageReleaseNotes>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="System.Text.Json" Version="6.0.0-rc.2.21480.5" />
-	</ItemGroup>
 	
 </Project>
