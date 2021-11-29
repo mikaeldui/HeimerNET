@@ -19,6 +19,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Pack
-      run: dotnet pack -c Release --no-build -o .\
+      run: dotnet pack -c Release -o .\
     - name: Push
       run: dotnet nuget push *.nupkg --skip-duplicate -s https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_APIKEY}}
