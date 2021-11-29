@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31613.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31815.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeimerNET.Lor.DeckCodes", "src\HeimerNET.Lor.DeckCodes\HeimerNET.Lor.DeckCodes.csproj", "{CF57894B-7DB0-4B19-8007-D9609B09F12A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A2BEA64D-488E-4409-B00A-4FAF30A6E307}"
 	ProjectSection(SolutionItems) = preProject
 		src\Directory.Build.props = src\Directory.Build.props
@@ -14,16 +12,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7CC2FD1F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeimerNET.Lor.DeckCodes.Test", "tests\HeimerNET.Lor.DeckCodes.Test\HeimerNET.Lor.DeckCodes.Test.csproj", "{E57F2F36-6B43-4D10-995C-47D41018E757}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeimerNET.Lor.GameClient", "src\HeimerNET.Lor.GameClient\HeimerNET.Lor.GameClient.csproj", "{580031FC-C41F-404E-A28F-9F91453E88BA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{994FF44F-20B8-4D30-B34B-84F2FA821F87}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeimerNET.Lor.DataDragon", "src\HeimerNET.Lor.DataDragon\HeimerNET.Lor.DataDragon.csproj", "{0819888D-A4D1-4886-9DF3-43DCF42F520D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeimerNET.ConsoleApp", "HeimerNET.ConsoleApp\HeimerNET.ConsoleApp.csproj", "{C066EE75-1FEA-4754-8090-BCD72BCF4889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeimerNET.ConsoleApp", "HeimerNET.ConsoleApp\HeimerNET.ConsoleApp.csproj", "{C066EE75-1FEA-4754-8090-BCD72BCF4889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeimerNET.Lor.GameClient", "src\HeimerNET.Lor.GameClient\HeimerNET.Lor.GameClient.csproj", "{302B9999-018A-40D2-B53D-5010D622CE2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeimerNET.Lor.DataDragon", "src\HeimerNET.Lor.DataDragon\HeimerNET.Lor.DataDragon.csproj", "{D325AD70-BAC9-4FC4-AE05-1ED5B0E95CE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeimerNET.Lor.DeckCodes", "src\HeimerNET.Lor.DeckCodes\HeimerNET.Lor.DeckCodes.csproj", "{3D59E50E-FF96-4E6E-AB76-6AF7A31A64D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,36 +32,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF57894B-7DB0-4B19-8007-D9609B09F12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF57894B-7DB0-4B19-8007-D9609B09F12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF57894B-7DB0-4B19-8007-D9609B09F12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF57894B-7DB0-4B19-8007-D9609B09F12A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E57F2F36-6B43-4D10-995C-47D41018E757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E57F2F36-6B43-4D10-995C-47D41018E757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E57F2F36-6B43-4D10-995C-47D41018E757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E57F2F36-6B43-4D10-995C-47D41018E757}.Release|Any CPU.Build.0 = Release|Any CPU
-		{580031FC-C41F-404E-A28F-9F91453E88BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{580031FC-C41F-404E-A28F-9F91453E88BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{580031FC-C41F-404E-A28F-9F91453E88BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{580031FC-C41F-404E-A28F-9F91453E88BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0819888D-A4D1-4886-9DF3-43DCF42F520D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0819888D-A4D1-4886-9DF3-43DCF42F520D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0819888D-A4D1-4886-9DF3-43DCF42F520D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0819888D-A4D1-4886-9DF3-43DCF42F520D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C066EE75-1FEA-4754-8090-BCD72BCF4889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C066EE75-1FEA-4754-8090-BCD72BCF4889}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C066EE75-1FEA-4754-8090-BCD72BCF4889}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C066EE75-1FEA-4754-8090-BCD72BCF4889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302B9999-018A-40D2-B53D-5010D622CE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302B9999-018A-40D2-B53D-5010D622CE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302B9999-018A-40D2-B53D-5010D622CE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302B9999-018A-40D2-B53D-5010D622CE2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D325AD70-BAC9-4FC4-AE05-1ED5B0E95CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D325AD70-BAC9-4FC4-AE05-1ED5B0E95CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D325AD70-BAC9-4FC4-AE05-1ED5B0E95CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D325AD70-BAC9-4FC4-AE05-1ED5B0E95CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D59E50E-FF96-4E6E-AB76-6AF7A31A64D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D59E50E-FF96-4E6E-AB76-6AF7A31A64D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D59E50E-FF96-4E6E-AB76-6AF7A31A64D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D59E50E-FF96-4E6E-AB76-6AF7A31A64D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CF57894B-7DB0-4B19-8007-D9609B09F12A} = {A2BEA64D-488E-4409-B00A-4FAF30A6E307}
 		{E57F2F36-6B43-4D10-995C-47D41018E757} = {7CC2FD1F-211D-4FAD-BEDA-B079583D6077}
-		{580031FC-C41F-404E-A28F-9F91453E88BA} = {A2BEA64D-488E-4409-B00A-4FAF30A6E307}
-		{0819888D-A4D1-4886-9DF3-43DCF42F520D} = {A2BEA64D-488E-4409-B00A-4FAF30A6E307}
 		{C066EE75-1FEA-4754-8090-BCD72BCF4889} = {994FF44F-20B8-4D30-B34B-84F2FA821F87}
+		{302B9999-018A-40D2-B53D-5010D622CE2A} = {A2BEA64D-488E-4409-B00A-4FAF30A6E307}
+		{D325AD70-BAC9-4FC4-AE05-1ED5B0E95CE6} = {A2BEA64D-488E-4409-B00A-4FAF30A6E307}
+		{3D59E50E-FF96-4E6E-AB76-6AF7A31A64D2} = {A2BEA64D-488E-4409-B00A-4FAF30A6E307}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9277A713-3C2E-4674-934D-CCF2A464CA86}

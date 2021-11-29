@@ -1,7 +1,7 @@
 ﻿# HeimerNET.Lor.DeckCodes
 
 This is a C# implementation of the C# library [RiotGames/LoRDeckCodes](https://github.com/RiotGames/LoRDeckCodes).
-The library is more universal, faster and use less memory.
+The library is faster and use less memory.
 
 ## How to use
 ```cs

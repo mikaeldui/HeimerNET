@@ -1,12 +1,24 @@
-﻿namespace HeimerNET.Lor.DataDragon
+﻿using System.Text.Json.Serialization;
+
+namespace HeimerNET.Lor.DataDragon;
+
+public record CoreBundle
 {
-    public record CoreBundle
-    {
-        public VocabTerm[] VocabTerms { get; init; } = default!;
-        public Keyword[] Keywords { get; init; } = default!;
-        public Region[] Regions { get; init; } = default!;
-        public SpellSpeed[] SpellSpeeds { get; init; } = default!;
-        public Rarity[] Rarities { get; init; } = default!;
-        public Set[] Sets { get; init; } = default!;
-    }
+    [JsonPropertyName("vocabTerms")]
+    public VocabTerm[] VocabTerms { get; init; } = default!;
+
+    [JsonPropertyName("keywords")]
+    public Keyword[] Keywords { get; init; } = default!;
+
+    [JsonPropertyName("regions")]
+    public Region[] Regions { get; init; } = default!;
+
+    [JsonPropertyName("spellSpeeds")]
+    public SpellSpeed[] SpellSpeeds { get; init; } = default!;
+
+    [JsonPropertyName("rarities")]
+    public Rarity[] Rarities { get; init; } = default!;
+
+    [JsonPropertyName("sets")]
+    public Set[] Sets { get; init; } = default!;
 }

@@ -1,13 +1,18 @@
-﻿namespace HeimerNET.Lor.DataDragon
-{
-    public record Set
-    {
-        public string IconAbsolutePath { get; init; } = default!;
+﻿using System.Text.Json.Serialization;
 
-        /// <summary>
-        /// Localized <see cref="NameRef"/>.
-        /// </summary>
-        public string Name { get; init; } = default!;
-        public string NameRef { get; init; } = default!;
-    }
+namespace HeimerNET.Lor.DataDragon;
+
+public record Set
+{
+    [JsonPropertyName("iconAbsolutePath")]
+    public string IconAbsolutePath { get; init; } = default!;
+
+    /// <summary>
+    /// Localized <see cref="NameRef"/>.
+    /// </summary>
+    [JsonPropertyName("name")]
+
+    public string Name { get; init; } = default!;
+    [JsonPropertyName("nameRef")]
+    public string NameRef { get; init; } = default!;
 }

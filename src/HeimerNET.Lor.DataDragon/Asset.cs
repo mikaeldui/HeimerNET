@@ -1,8 +1,12 @@
-﻿namespace HeimerNET.Lor.DataDragon
+﻿using System.Text.Json.Serialization;
+
+namespace HeimerNET.Lor.DataDragon;
+
+public record Asset
 {
-    public record Asset
-    {
-        public string GameAbsolutePath { get; init; } = default!;
-        public string FullAbsolutePath { get; init; } = default!;
-    }
+    [JsonPropertyName("gameAbsolutePath")]
+    public string GameAbsolutePath { get; init; } = default!;
+
+    [JsonPropertyName("fullAbsolutePath")]
+    public string FullAbsolutePath { get; init; } = default!;
 }

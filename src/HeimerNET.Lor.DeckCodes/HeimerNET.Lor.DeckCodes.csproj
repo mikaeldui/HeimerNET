@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<TargetFrameworks>net5.0;net6.0</TargetFrameworks>
 		<Description>Encode/Decode Legends of Runeterra decks to/from simple strings.</Description>
 		<PackageTags>LoR;LegendsOfRuneterra;Runeterra;LoRDeckCodes</PackageTags>
-		<Version>1.0.1</Version>
-		<PackageReleaseNotes>Update PackageProjectUrl.</PackageReleaseNotes>
+		<Version>1.0.2</Version>
+		<PackageReleaseNotes>.NET6</PackageReleaseNotes>
 	</PropertyGroup>
 
 </Project>
